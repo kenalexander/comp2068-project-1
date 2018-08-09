@@ -10,6 +10,10 @@ var indexRouter = require('./routes/drinks');
 
 var app = express();
 
+var mongoose = require( 'mongoose' );
+var config = require( './config/connect' );
+mongoose.connect( config.db );
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
