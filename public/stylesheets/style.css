@@ -1,9 +1,22 @@
-body {
-  padding: 50px;
-  font: 14px "Comic Sans MS", cursive, sans-serif;
-  background-color: #05ffb0; }
+html {
+  box-sizing: border-box; }
 
-a {
-  color: #00B7FF; }
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #ecf0f1; }
+  body .container {
+    background-color: #fff;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 1em; }
+    body .container .card {
+      margin-bottom: 1em; }
+      body .container .card .btn {
+        background-color: #e74c3c;
+        border: #e74c3c; }
+      body .container .card .actions form {
+        display: inline; }
 
 /*# sourceMappingURL=style.css.map */
