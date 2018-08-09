@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+<section>
+  <form action="/drinks/" method="post">
+    <fieldset>
+      <legend>Drink Information</legend>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="product_name" name="drinkName" placeholder="Straight Whiskey" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Volume</label>
+        <input type="number" class="form-control" id="product_name" name="volume" placeholder="2" required> ounces
+      </div>
+
+      <div class="form-group">
+        <label for="name">Alcohol Limit</label>
+        <input type="number" class="form-control" id="product_name" name="alcoholLimit" placeholder="40" required>%
+      </div>
+
+      <div class="form-group">
+        <label for="name">Description</label>
+        <input type="text" class="form-control" id="product_name" name="description" placeholder="Optional">
+      </div>
+    </fieldset>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Create Drink</button>
+    </div>
+  </form>
+</section>
+
+<% include ../partials/footer %>

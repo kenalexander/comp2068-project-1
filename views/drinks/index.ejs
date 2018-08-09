@@ -1,0 +1,28 @@
+<% include ../partials/header %>
+  
+<section>
+  <div>
+    <a href="/drinks/new">New Drink</a>
+  </div>
+
+  <div class="row">
+
+    <% for ( let drink of drinks ) { %>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= drink.drinkName %></h5>
+            <p>Alcohol Limit: <%= drink.alcoholLimit %>%</p>
+            <p>Volume: <%= drink.volume %> ounces</p>
+            <% if (drink.description != null) { %>
+              <p><%= drink.description %></p>
+            <% } %>
+          </div>
+        </div>
+      </div>
+    <% } %>
+
+  </div>
+</section>
+
+<% include ../partials/footer %>
