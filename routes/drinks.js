@@ -6,6 +6,7 @@ var drinksController = require('../controllers/drinksController')
 
 // index (http://my-app.com/products)
 router.get('/', drinksController.index)
+
 // new (http://my-app.com/products/new)
 router.get( '/new', drinksController.new )
 
