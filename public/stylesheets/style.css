@@ -5,7 +5,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #ecf0f1; }
+  background-color: #314f56; }
   body .container {
     background-color: #fff;
     padding: 1em;
@@ -13,9 +13,8 @@ body {
     border-radius: 1em; }
     body .container .card {
       margin-bottom: 1em; }
-      body .container .card .btn {
-        background-color: #e74c3c;
-        border: #e74c3c; }
+      
+      body .container .card .btn {}
       body .container .card .actions form {
         display: inline; }
 

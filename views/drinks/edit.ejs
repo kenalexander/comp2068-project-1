@@ -1,0 +1,35 @@
+<% include ../partials/header %>
+
+<section>
+  <form action="/drinks/<%= drink.id %>" method="post">
+    <fieldset>
+      <legend>Drink Update</legend>
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="product_name" name="drinkName" placeholder="<%= drink.drinkName %>" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Volume</label>
+        <input type="number" class="form-control" id="product_name" name="volume" placeholder="<%= drink.volume %>" required> ounces
+      </div>
+
+      <div class="form-group">
+        <label for="name">Alcohol Limit</label>
+        <input type="number" class="form-control" id="product_name" name="alcoholLimit" placeholder="<%= drink.alcoholLimit %>" required>%
+      </div>
+
+      <div class="form-group">
+        <label for="name">Description</label>
+        <input type="text" class="form-control" id="product_name" name="description" placeholder="<%= drink.description %>">
+      </div>
+    </fieldset>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </form>
+</section>
+
+<% include ../partials/footer %>

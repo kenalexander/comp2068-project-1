@@ -4,6 +4,13 @@ var router = express.Router()
 // create a link to our drink model
 var drinksController = require('../controllers/drinksController')
 
+// sends to home landing page
+router.get( '/home', function(req, res){
+	res.render('home', locals = {
+    	title: 'Alexander Liquor Emporium'
+  	})
+} )
+
 // index (http://my-app.com/products)
 router.get('/', drinksController.index)
 

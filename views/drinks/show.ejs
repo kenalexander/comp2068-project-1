@@ -1,0 +1,45 @@
+<% include ../partials/header %>
+  
+<section>
+
+  <div class="row">
+
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          
+          <h5 class="card-title">
+            <%= drink.drinkName %>
+          </h5>
+
+          <p>
+            Alcohol Content: <%= drink.alcoholLimit %>%
+          </p>
+          
+          <p>
+            Volume: <%= drink.volume %> Ounces
+          </p>
+
+          <p>
+            <% if (drink.description != null) { %>
+              Description: <p><%= drink.description %></p>
+            <% } %>
+          </p>
+          
+          
+            <div class="actions">
+              <a href="/drinks/<%= drink.id %>/edit" class="btn btn-primary">Edit</a>
+
+              <form action="/drinks/<%= drink.id %>/delete" method="post"  onsubmit="return confirm('Are you sure you want to delete this drink?');">
+                <input type="hidden" name="id" value="<%= drink.id %>">
+                <button type="submit" class="btn btn-danger">DELETE</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<% include ../partials/footer %>
