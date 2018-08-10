@@ -30,7 +30,7 @@
             <div class="actions">
               <a href="/drinks/<%= drink.id %>/edit" class="btn btn-primary">Edit</a>
 
-              <form action="/drinks/<%= drink.id %>/delete" method="post"  onsubmit="return confirm('Are you sure you want to delete this drink?');">
+              <form action="/drinks/<%= drink.id %>/delete" method="post"  onsubmit="return confirm('DANGER ZONE');">
                 <input type="hidden" name="id" value="<%= drink.id %>">
                 <button type="submit" class="btn btn-danger">DELETE</button>
               </form>
