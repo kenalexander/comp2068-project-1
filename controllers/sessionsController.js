@@ -19,7 +19,7 @@ exports.create = function ( req, res, next ) {
     successRedirect: '/drinks/home',
     failureRedirect: '/sessions/new',
     failureMessage: 'Invalid Login'
-  })
+  })}
 
 exports.delete = function ( req, res, next ) {
 
