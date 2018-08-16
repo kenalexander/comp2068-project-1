@@ -5,17 +5,33 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #314f56; }
-  body .container {
-    background-color: #fff;
-    padding: 1em;
-    margin-top: 1em;
-    border-radius: 1em; }
-    body .container .card {
-      margin-bottom: 1em; }
-      
-      body .container .card .btn {}
-      body .container .card .actions form {
-        display: inline; }
+  background-color: #314f56; 
+}
+body .container {
+  background-color: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 1em; 
+}
+
+body .container .card {
+  margin-bottom: 1em; 
+}
+
+body .container .card .btn {
+  background-color: #314f56;
+}
+body .container .card .actions form {
+  display: inline; 
+}
+
+body .col-xl .btn {
+  background-color: #314f56; 
+}
+
+section .btn {
+   background-color: #314f56; 
+}
+
 
 /*# sourceMappingURL=style.css.map */

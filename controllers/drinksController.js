@@ -1,7 +1,5 @@
 var Drink = require( '../models/drink' )
 
-/* VIEWS */
-// Index (View)
 exports.index = function( req, res, next ) {
 
   locals = {
@@ -15,7 +13,6 @@ exports.index = function( req, res, next ) {
   })
 }
 
-// New (View)
 exports.new = function ( req, res ) {
 
   locals = {
@@ -25,7 +22,6 @@ exports.new = function ( req, res ) {
   res.render('drinks/new', locals);
 }
 
-// Create (Action)
 exports.create = function ( req, res, next ) {
 
   Drink.create({
@@ -42,8 +38,6 @@ exports.create = function ( req, res, next ) {
   })
 }
 
-/* STUBS */
-// Show (View)
 exports.show = function ( req, res, next ) { 
 
   let locals = {
@@ -62,7 +56,6 @@ exports.show = function ( req, res, next ) {
   })
 }
 
-// Edit (View)
 exports.edit = function ( req, res ) { 
   
   locals = {
@@ -73,10 +66,10 @@ exports.edit = function ( req, res ) {
     _id: req.params.id
   })
   .then( function ( drink ) {
-    // add the products to our locals
+
     locals.drink = drink;
 
-    // render our view
+
     res.render( 'drinks/edit', locals )
   })
   .catch( function ( err ) {
@@ -84,7 +77,6 @@ exports.edit = function ( req, res ) {
   })
 }
 
-// Update (Action)
 exports.update = function ( req, res, next ) {
 
  Drink.findById( req.params.id )
@@ -108,7 +100,6 @@ exports.update = function ( req, res, next ) {
   })
 }
 
-// Delete (Action)
 exports.delete = function ( req, res, next) { 
   Drink.remove({
     _id: req.body.id
